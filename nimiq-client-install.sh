@@ -21,7 +21,7 @@ displayErr() {
     output "Make sure you double check before hitting enter! Only one shot at these!"
     output "You will find examples in the brackets."
     output " "
-    read -e -p "Enter the pool URL: " -i "us-east-nimiq.com:8444" POOL
+    read -e -p "Enter the pool URL: " -i "us-east.porkypool.com:8444" POOL
     read -e -p "Enter the miner CPU threads: " -i $(getconf _NPROCESSORS_ONLN) THREADS
     read -e -p "Enter your wallet address: " WALLET
     read -e -p "Enter device name: " EXTRADATA
