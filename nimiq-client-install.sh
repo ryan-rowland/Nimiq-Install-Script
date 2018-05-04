@@ -25,7 +25,7 @@ displayErr() {
     read -e -p "Enter the miner CPU threads: " -i $(getconf _NPROCESSORS_ONLN) THREADS
     read -e -p "Enter your wallet address: " WALLET
     read -e -p "Enter device name: " EXTRADATA
-    read -e -p "Enter statistics interval in seconds: " -i "10000" STATISTICS
+    read -e -p "Enter statistics interval in seconds: " -i "10" STATISTICS
     
     output " "
     output "Making sure everything is up to date."
