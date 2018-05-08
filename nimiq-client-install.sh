@@ -76,7 +76,7 @@ displayErr() {
     output " "
     sleep 3
 
-    cd ..
+    cd ../../..
     echo '#!/bin/bash
     SCRIPT_PATH=$(dirname "$0")/core
     $SCRIPT_PATH/clients/nodejs/nimiq "$@"' > miner
