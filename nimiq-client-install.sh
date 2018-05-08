@@ -32,7 +32,7 @@ displayErr() {
     output " "
     sleep 3
     
-    
+    sudo add-apt-repository ppa:deadsnakes/ppa
     sudo apt-get -y update 
     sudo apt-get -y upgrade
     sudo apt-get -y autoremove
@@ -49,7 +49,7 @@ displayErr() {
     output " "
     sleep 3
     
-    sudo apt-get install -y git build-essential nodejs unzip
+    sudo apt-get install -y git build-essential python2.7 python-dev nodejs unzip
 	
     output " "
     output "Downloading Nimiq core."
@@ -67,6 +67,9 @@ displayErr() {
     sudo npm install -g gulp
     npm install
     gulp build-node
+    sudo npm install -g node-gyp
+    cd node_modules/node-lmdb
+    node-gyp rebuild
 
     output " "
     output "Building launch scripts."
