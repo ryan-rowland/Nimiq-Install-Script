@@ -32,7 +32,7 @@ displayErr() {
     output " "
     sleep 3
     
-    sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo add-apt-repository -y ppa:deadsnakes/ppa
     sudo apt-get -y update 
     sudo apt-get -y upgrade
     sudo apt-get -y autoremove
