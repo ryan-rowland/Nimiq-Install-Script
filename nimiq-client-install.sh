@@ -107,6 +107,16 @@ echo '#!/bin/bash
 UV_THREADPOOL_SIZE='"${THREADS}"' ./miner --dumb --pool='"${POOL}"' --miner='"${THREADS}"' --wallet-address="'"${WALLET}"'" --extra-data="'"${EXTRADATA}"'" --statistics='"${STATISTICS}"'' > start
 chmod u+x start
 
+output " "
+output "Downloading consensus."
+output " "
+sleep 3
+
+if [ ! -d "./main-full-consensus" ]; then
+  wget https://github.com/ryan-rowland/Nimiq-Install-Script/raw/master/main-full-consensus.tar.gz
+  tar -xvf main-full-consensus.tar.gz
+fi
+
 output "Congratulations! If everything went well you can now start mining."
 output " "
 output "To start the miner type ./start"
