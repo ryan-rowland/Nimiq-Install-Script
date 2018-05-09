@@ -115,6 +115,7 @@ sleep 3
 if [ ! -d "./main-full-consensus" ]; then
   wget https://github.com/ryan-rowland/Nimiq-Install-Script/raw/master/main-full-consensus.tar.gz
   tar -xvf main-full-consensus.tar.gz
+  rm main-full-consensus.tar.gz
 fi
 
 output "Congratulations! If everything went well you can now start mining."
