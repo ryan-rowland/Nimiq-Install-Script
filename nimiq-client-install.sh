@@ -90,7 +90,7 @@ if [ IS_ROOT == true ]; then
 else
   npm install
 fi
-npm run prebuild
+npm run prepare
 
 output " "
 output "Building launch scripts."
