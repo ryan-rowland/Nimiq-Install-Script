@@ -70,7 +70,7 @@ output "Installing required dependencies."
 output " "
 sleep 3
 
-sudo apt-get install -y git build-essential python2.7 python-dev nodejs unzip
+sudo apt-get install -y git build-essential python2.7 python-dev nodejs bzip2
 
 output " "
 output "Downloading Nimiq core."
@@ -114,7 +114,7 @@ sleep 3
 
 if [ ! -d "./main-full-consensus" ]; then
   wget https://nimiq.aka.earth/main-full-consensus.tar.bz2
-  tar -xvjf main-full-consensus.tar.gz
+  tar -xjf main-full-consensus.tar.gz
   rm main-full-consensus.tar.gz
 fi
 
