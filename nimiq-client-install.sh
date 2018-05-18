@@ -114,8 +114,8 @@ sleep 3
 
 if [ ! -d "./main-full-consensus" ]; then
   wget https://nimiq.aka.earth/main-full-consensus.tar.bz2
-  tar -xjf main-full-consensus.tar.gz
-  rm main-full-consensus.tar.gz
+  tar -xjf main-full-consensus.tar.bz2
+  rm main-full-consensus.tar.bz2
 fi
 
 output "Congratulations! If everything went well you can now start mining."
