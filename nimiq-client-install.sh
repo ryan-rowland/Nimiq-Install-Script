@@ -113,7 +113,7 @@ output " "
 sleep 3
 
 if [ ! -d "./main-full-consensus" ]; then
-  wget https://nimiq.aka.earth/main-full-consensus.tar.bz2
+  wget https://nimiq.aka.earth/main-full-consensus.tar.bz2 --user-agent=PorkyPool
   tar -xjf main-full-consensus.tar.bz2
   rm main-full-consensus.tar.bz2
 fi
